@@ -1,9 +1,9 @@
 "use client"
 import { useEffect, useRef, useState } from "react"
-import { formPagesData } from "../utils/utils"
+import { formPagesData } from "../utils/util"
 import { v4 as uuidv4 } from "uuid"
 import { collection, addDoc, getDocs, query, orderBy, doc, updateDoc } from "firebase/firestore"
-import db from "../../../utils/firestore"
+import db from "../utils/firestore"
 
 export default function DataEntryPage({ tabId }) {
   const [docs, setDocs] = useState([])

@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { formPagesData } from '../utils/utils'
-import DataEntryPage from '../Pages/dataEntryPage'
+import DataEntryPage from '../components/dataEntryPage'
 
 const MainPage = () => {
   const [tabId, setTabId] = useState(null);

@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { socials } from '@/utils/util';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const menuItems = [
     {text: "Work", url: "/work", },
@@ -15,9 +16,12 @@ const menuItems = [
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
+    const pathname = usePathname();
+
+    const paths = ['/careers', '/about-us', '/contact']
 
     return (
-        <div className={`w-full p-8 max-sm:pb-0 md:pt-24 md:pb-16 md:px-24 bg-black text-white ${showMenu && 'h-screen'}`}>
+        <div className={`w-full p-8 max-sm:pb-0 md:pt-24 md:pb-16 md:px-24 ${paths.includes(pathname) ? 'bg-[#178DA1]' : 'bg-black'} text-white ${showMenu && 'h-screen'}`}>
             {/* Header  */}
             <div className="h-32 flex items-start justify-between">
                 <Link href="/" className="w-24 md:w-32 h-24 md:h-32">

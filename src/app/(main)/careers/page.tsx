@@ -1,4 +1,5 @@
 import React from 'react'
+import { v4 as uuidv4 } from 'uuid'
 
 const testimonials = [
     {image: "", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?", name: "John Doe", title: "BA 1", },
@@ -17,7 +18,7 @@ const page = () => {
             {
                 testimonials.map((testimonial) => {
                     return (
-                        <div className="flex items-center justify-center">
+                        <div key={uuidv4()} className="flex items-center justify-center">
                             <div className="h-48 w-48 rounded-full bg-white"></div>
                         </div>
                     )

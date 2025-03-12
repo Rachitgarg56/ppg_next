@@ -50,8 +50,8 @@ export default function Home() {
         <div className="text-center mx-auto w-full md:w-2/3 leading-relaxed p-8">
           <div className="font-thin text-gray-100 text-2xl md:text-3xl leading-relaxed md:leading-relaxed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quis sunt velit explicabo modi rem voluptatibus accusamus consectetur! Numquam quisquam velit neque quos porro molestias quaerat molestiae iusto cum? Ullam!</div>
           <div className="flex flex-col md:flex-row items-center justify-between mt-24">
-            <Link href="#" className="border border-gray-100 text-center py-6 text-2xl md:text-3xl text-[#178DA1] italic tracking-wider font-cambria font-semibold w-full">capabilities</Link>
-            <Link href="#" className="border border-gray-100 text-center py-6 text-2xl md:text-3xl text-[#178DA1] italic tracking-wider font-cambria font-semibold mt-8 md:mt-0 md:ml-16 w-full">work with us</Link>
+            <Link href="#" className="border border-gray-100 text-center py-6 text-2xl md:text-3xl text-[#178DA1] italic tracking-wider font-cambria font-semibold w-full hover:bg-[#E1E3E1]">capabilities</Link>
+            <Link href="#" className="border border-gray-100 text-center py-6 text-2xl md:text-3xl text-[#178DA1] italic tracking-wider font-cambria font-semibold mt-8 md:mt-0 md:ml-16 w-full hover:bg-[#E1E3E1]">work with us</Link>
           </div>
         </div>
       </div>

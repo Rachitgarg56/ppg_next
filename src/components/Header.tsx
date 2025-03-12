@@ -27,13 +27,13 @@ const Header = () => {
                 <Link href="/" className="w-24 md:w-32 h-24 md:h-32">
                     <img src="/assets/images/ppg-logo.svg" alt=""/>
                 </Link>
-                <button className="w-16 h-16" onClick={(() => setShowMenu(true))}>
+                <button className="w-16 h-16 cursor-pointer" onClick={(() => setShowMenu(true))}>
                     <img src="/assets/images/menu-icon.svg" alt=""/>
                 </button>
             </div>
             {/* Menu */}
             <div className={`fixed overflow-hidden top-0 left-0 w-full h-screen bg-[#178DA1] p-10 sm:p-8 md:p-12 lg:px-40 lg:pt-32 z-20 ${!showMenu && 'hidden'}`}>
-                <button onClick={(() => setShowMenu(false))} className="w-4 h-4 sm:w-12 md:w-24 sm:h-12 md:h-24 text-white absolute top-10 sm:top-8 md:top-8 lg:top-24 right-12 lg:right-40">
+                <button onClick={(() => setShowMenu(false))} className="cursor-pointer w-4 h-4 sm:w-12 md:w-24 sm:h-12 md:h-24 text-white absolute top-10 sm:top-8 md:top-8 lg:top-24 right-12 lg:right-40">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="size-6 sm:size-12 md:size-16 lg:size-20">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                     </svg>

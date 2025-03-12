@@ -7,7 +7,7 @@ const page = () => {
     const phone = useRef('(123) 456 7890');
 
     return (
-        <div className='bg-[#178DA1] text-white h-[400px]'>
+        <div className='bg-[#178DA1] text-white h-[400px] py-16'>
             <div className="text-center text-5xl font-bold text-white italic font-cambria">Get in touch</div>
             <div className="text-center text-3xl md:text-4xl font-bold italic mt-16 text-gray-900 font-cambria">{phone.current}</div>
             <div className="text-center mt-8 font-cambria font-bold">

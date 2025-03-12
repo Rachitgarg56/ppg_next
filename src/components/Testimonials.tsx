@@ -30,7 +30,7 @@ const Testimonials = () => {
 
     return (
         <div className="bg-[#178DA1] text-white text-center py-12 sm:py-24 md:py-48">
-            <div className="w-full md:w-2/3 mx-auto flex items-center justify-between p-4">
+            <div className="w-full lg:w-2/3 mx-auto flex items-center justify-between p-4">
                 <button onClick={prevTestimonial}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 md:size-9">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />

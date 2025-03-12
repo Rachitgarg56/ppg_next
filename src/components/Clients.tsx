@@ -20,8 +20,8 @@ const Clients = () => {
     const clientColsClass = 'grid-cols-' + clientCols;
     
     return (
-        <div className="bg-black p-8 overflow-x-auto">
-            <div className={`grid gap-6 py-16 md:py-32 ${clientColsClass} grid-cols-4`}>
+        <div className="bg-black max-sm:px-4 p-8 overflow-x-auto">
+            <div className={`grid max-sm:gap-4 gap-6 py-16 md:py-32 ${clientColsClass} grid-cols-4`}>
                 {
                     clients.map((client) => {
                         return (

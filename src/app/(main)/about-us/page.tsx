@@ -38,10 +38,10 @@ const page = () => {
     }
 
     return (
-        <div className='bg-[#178DA1] text-white'>
+        <div className='bg-[#178DA1] text-white pt-8'>
             <div className="text-center text-5xl font-bold text-white italic font-cambria">About Us</div>
-            <div className="text-2xl md:text-3xl font-thin mt-16 w-full md:w-2/3 mx-auto text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?</div>
-            <div className="w-full md:w-2/3 mx-auto mt-16">
+            <div className="text-2xl md:text-3xl font-thin mt-16 w-full lg:w-2/3 mx-auto text-center px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?</div>
+            <div className="w-full lg:w-2/3 mx-auto mt-16 px-4">
                 {
                     teamMembers.map((member) => {
                         return (
@@ -50,7 +50,7 @@ const page = () => {
                                 <div className="leading-relaxed mt-8 md:mt-0">
                                     <h2 className="text-center md:text-left text-2xl md:text-3xl font-semibold italic font-cambria">{member.name}</h2>
                                     <h3 className="text-center md:text-left text-xl md:text-2xl font-thin italic">{member.designation}</h3>
-                                    <p className="text-xl md:text-2xl mt-8 font-thin">{member.blurb}</p>
+                                    <p className="text-xl text-center md:text-left md:text-2xl mt-8 font-thin">{member.blurb}</p>
                                 </div>
                             </div>
                         )
@@ -60,7 +60,7 @@ const page = () => {
 
             <div className="bg-black py-16 md:py-32">
                 <h2 className="text-center text-[#178DA1] text-4xl italic font-semibold font-cambria">Our core values</h2>
-                <div className="w-full md:w-2/3 mx-auto mt-16 md:mt-32">
+                <div className="w-full lg:w-2/3 mx-auto mt-16 md:mt-32">
                     {
                         coreValues.map((value) => {
                             return (

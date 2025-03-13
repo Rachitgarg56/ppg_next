@@ -7,7 +7,7 @@ import { heroImages } from '@/utils/util'
 const HeroSection = () => {
     const [bubblesSize, setBubblesSize] = useState(4);
     
-    const handleResizeOrLoad = useCallback(() => {
+    const handleResizeOrLoad = () => {
         const windowWidth = window.innerWidth
         if (windowWidth >= 1024) {
             console.log('here i am')
@@ -34,7 +34,7 @@ const HeroSection = () => {
             console.log('here i am')
             setBubblesSize(1.1)
         }
-    },[setBubblesSize])
+    }
    
     useEffect(() => {
         handleResizeOrLoad()

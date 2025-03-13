@@ -5,40 +5,37 @@ import { v4 as uuidv4 } from 'uuid'
 import { heroImages } from '@/utils/util'
 
 const HeroSection = () => {
-    const [bubblesSize, setBubblesSize] = useState(4);
+    const [bubblesSize, setBubblesSize] = useState(() => getBubbleSize());
     
-    const handleResizeOrLoad = () => {
+    function getBubbleSize() {
         const windowWidth = window.innerWidth
+        let size;
         if (windowWidth >= 1024) {
-            console.log('here i am')
-            setBubblesSize(4)
+            size = 4
         } else if (windowWidth < 1024 && windowWidth >= 880) {
-            console.log('here i am')
-            setBubblesSize(3.5)
+            size = 3.5
         } else if (windowWidth < 880 && windowWidth > 768) {
-            console.log('here i am')
-            setBubblesSize(3)
+            size = 3
         } else if (windowWidth <= 768 && windowWidth >= 640) {
-            console.log('here i am')
-            setBubblesSize(2.5)
+            size = 2.5
         } else if (windowWidth < 640 && windowWidth >= 500) {
-            console.log('here i am')
-            setBubblesSize(2)
+            size = 2
         } else if (windowWidth < 500 && windowWidth >= 400) {
-            console.log('here i am')
-            setBubblesSize(1.5)
+            size = 1.5
         } else if (windowWidth < 400 && windowWidth >= 360) {
-            console.log('here i am')
-            setBubblesSize(1.3)
+            size = 1.3
         } else if (windowWidth < 360) {
-            console.log('here i am')
-            setBubblesSize(1.1)
+            size = 1.2
         }
+        return size
+    }
+
+    function handleResizeOrLoad() {
+        const size = getBubbleSize()
+        setBubblesSize(size)
     }
    
     useEffect(() => {
-        handleResizeOrLoad()
-
         window.addEventListener('resize', handleResizeOrLoad)
 
         return () => {

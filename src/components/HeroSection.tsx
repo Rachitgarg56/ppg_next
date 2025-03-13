@@ -8,7 +8,7 @@ const HeroSection = () => {
     const [bubblesSize, setBubblesSize] = useState(() => getBubbleSize());
     
     function getBubbleSize() {
-        if (typeof window === "undefined") return 1.2
+        if (typeof window === "undefined") return 1.3
          
         const windowWidth = window.innerWidth
         let size = 4;
@@ -31,19 +31,21 @@ const HeroSection = () => {
         }
         return size
     }
-
-    function handleResizeOrLoad() {
-        const size = getBubbleSize()
-        setBubblesSize(size)
-    }
    
     useEffect(() => {
+        function handleResizeOrLoad() {
+            const size = getBubbleSize()
+            setBubblesSize(size)
+        }
+
+        handleResizeOrLoad()
+    
         window.addEventListener('resize', handleResizeOrLoad)
 
         return () => {
             window.removeEventListener('resize', handleResizeOrLoad)
         }
-    },[handleResizeOrLoad])
+    },[getBubbleSize])
     
     return (
     <div className='bg-black pb-32 px-4'>

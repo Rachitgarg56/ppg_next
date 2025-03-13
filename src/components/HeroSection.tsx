@@ -9,7 +9,7 @@ const HeroSection = () => {
     
     function getBubbleSize() {
         const windowWidth = window.innerWidth
-        let size;
+        let size = 4;
         if (windowWidth >= 1024) {
             size = 4
         } else if (windowWidth < 1024 && windowWidth >= 880) {

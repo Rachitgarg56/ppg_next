@@ -8,7 +8,7 @@ const HeroSection = () => {
     const [bubblesSize, setBubblesSize] = useState(() => getBubbleSize());
     
     function getBubbleSize() {
-        if (typeof window === "undefined") return 4
+        // if (typeof window === "undefined") return 4
          
         const windowWidth = window.innerWidth
         let size = 4;

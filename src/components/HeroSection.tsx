@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid'
 import { heroImages } from '@/utils/util'
 
 const HeroSection = () => {
-    const [bubblesSize, setBubblesSize] = useState(() => getBubbleSize());
+    const [bubblesSize, setBubblesSize] = useState(() => 4);
     
     function getBubbleSize() {
         if (typeof window === "undefined") return 1.3

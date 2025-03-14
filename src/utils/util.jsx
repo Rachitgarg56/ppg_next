@@ -65,3 +65,83 @@ export const coreValues = [
     {image: "", title: "Innovation", subtitle: "We lead with creativity", details: "We lead with creativity, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
     {image: "", title: "Adaptability", subtitle: "We evolve to meet your needs", details: "We evolve to meet your needs, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
 ]
+
+export const works = [
+  {
+    title: "Sunset Bliss Fest",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae vitae placeat nesciunt quaerat deleniti laboriosam consequuntur maxime quod cupiditate expedita amet vel porro labore, totam repellat voluptas quos similique!",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723300354426-e8c90954f6d5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    elements: [
+      {
+        title: "Objectives, Planning & Execution",
+        subtitle:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae vitae placeat nesciunt quaerat deleniti",
+        bullets: [
+          {
+            title: "Enhance Brand Image",
+            details: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          },
+          { title: "Engage Customers", details: "" },
+          { title: "Increase Brand Loyalty", details: "" },
+          { title: "Boost Sales", details: "" },
+        ],
+      },
+      {
+        title: "Key Components",
+        bullets: [
+          {
+            title: "Venue & Setup",
+            details: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          },
+          { title: "Entertainment & Activities", details: "" },
+          { title: "Increase Brand Loyalty", details: "" },
+          { title: "Boost Sales", details: "" },
+        ],
+      },
+      {
+        title: "Conclusion",
+        subtitle:
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae vitae placeat nesciunt quaerat deleniti",
+      },
+    ],
+    slug: "sunset-bliss-fest",
+  },
+  {
+    title: "Beer Pong",
+    image:
+      "https://images.unsplash.com/photo-1568667185695-edcbcd4938cb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    slug: "beer-pong",
+  },
+  // {
+  //   title: "",
+  //   image:
+  //     "https://images.unsplash.com/photo-1723743809921-07781a7c6535?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  // },
+  // {
+  //   title: "",
+  //   image:
+  //     "https://images.unsplash.com/photo-1719937206498-b31844530a96?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  // },
+  // {
+  //   title: "",
+  //   image:
+  //     "https://images.unsplash.com/photo-1723766700475-3f8f1d3c0c1a?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  // },
+  // {
+  //   title: "",
+  //   image:
+  //     "https://images.unsplash.com/photo-1719937206255-cc337bccfc7d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  // },
+  // {
+  //   title: "",
+  //   image:
+  //     "https://plus.unsplash.com/premium_photo-1723924941212-b03a8db60215?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  // },
+  // {
+  //   title: "",
+  //   image:
+  //     "https://images.unsplash.com/photo-1723934603827-e5a2dd061ba2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  // },
+];

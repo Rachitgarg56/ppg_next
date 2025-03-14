@@ -57,3 +57,11 @@ export const formPagesData = [
         dbCollectionId: 'sideHeros',
     },
 ]
+
+export const coreValues = [
+    {image: "", title: "Partnership", subtitle: "We are here for you", details: "We are here for you, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
+    {image: "", title: "Consistency", subtitle: "We are at it, always", details: "We are at it, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
+    {image: "", title: "Reliability", subtitle: "We got your back", details: "We got your back, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
+    {image: "", title: "Innovation", subtitle: "We lead with creativity", details: "We lead with creativity, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
+    {image: "", title: "Adaptability", subtitle: "We evolve to meet your needs", details: "We evolve to meet your needs, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
+]

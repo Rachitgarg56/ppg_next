@@ -15,8 +15,8 @@ export const generateMetadata = async ( { params }: PageProps ): Promise<Metadat
   const { slug } = await params;
   const work = getWork(slug);
   return {
-    title: 'this is the work page title',
-    description: 'this is the work page description',
+    title: work?.title,
+    description: work?.subtitle,
     openGraph: {
       images: [
         {
@@ -34,7 +34,6 @@ export const generateMetadata = async ( { params }: PageProps ): Promise<Metadat
 const page = ( { params }: PageProps ) => {
   const { slug } = use(params);
   const work = getWork(slug);
-  console.log('work',work)
   return (
     <div className="bg-black">
       <div className="text-center text-5xl font-bold text-white italic font-cambria pb-16">

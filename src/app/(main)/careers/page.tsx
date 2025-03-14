@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -6,6 +7,25 @@ const testimonials = [
     {image: "", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?", name: "Jane Doe", title: "BA 2", },
     {image: "", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?", name: "John Smith", title: "BA 3", },
 ]
+
+export const generateMetadata = (): Metadata => {
+    return {
+      title: "My App",
+      description: "This is a Next.js app",
+      openGraph: {
+        images: [
+          {
+            url: "",
+            alt: "Preview image for My App",
+          },
+        ],
+        title: "My App",
+        description: "This is a Next.js app",
+        type: "website",
+      },
+    };
+  };
+  
 
 const page = () => {
   return (

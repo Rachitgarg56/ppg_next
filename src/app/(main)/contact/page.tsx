@@ -1,6 +1,26 @@
 'use client'
+import { Metadata } from 'next';
 import Link from 'next/link';
 import React, { useRef } from 'react'
+
+// export const generateMetadata = (): Metadata => {
+//     return {
+//       title: "My App",
+//       description: "This is a Next.js app",
+//       openGraph: {
+//         images: [
+//           {
+//             url: "",
+//             alt: "Preview image for My App",
+//           },
+//         ],
+//         title: "My App",
+//         description: "This is a Next.js app",
+//         type: "website",
+//       },
+//     };
+//   };
+  
 
 const page = () => {
     const email = useRef('hello@ActivatePPG.com');

@@ -2,6 +2,25 @@ import Clients from '@/components/Clients';
 import HeroSection from '@/components/HeroSection';
 import SideHero from '@/components/SideHero';
 import Testimonials from '@/components/Testimonials';
+import { Metadata } from 'next';
+
+export const generateMetadata = (): Metadata => {
+  return {
+    title: "My App",
+    description: "This is a Next.js app",
+    openGraph: {
+      images: [
+        {
+          url: "",
+          alt: "Preview image for My App",
+        },
+      ],
+      title: "My App",
+      description: "This is a Next.js app",
+      type: "website",
+    },
+  };
+};
 
 export default function Home() {
   return (

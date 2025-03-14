@@ -1,5 +1,6 @@
 'use client'
 
+import { Metadata } from 'next';
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -22,6 +23,25 @@ const coreValues = [
     {image: "", title: "Innovation", subtitle: "We lead with creativity", details: "We lead with creativity, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
     {image: "", title: "Adaptability", subtitle: "We evolve to meet your needs", details: "We evolve to meet your needs, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
 ]
+
+// export const generateMetadata = (): Metadata => {
+//   return {
+//     title: "My App",
+//     description: "This is a Next.js app",
+//     openGraph: {
+//       images: [
+//         {
+//           url: "",
+//           alt: "Preview image for My App",
+//         },
+//       ],
+//       title: "My App",
+//       description: "This is a Next.js app",
+//       type: "website",
+//     },
+//   };
+// };
+
 
 const page = () => {
     const [showCoreValue, setShowCoreValue] = useState(false)

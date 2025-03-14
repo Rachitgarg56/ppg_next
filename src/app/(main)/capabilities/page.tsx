@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Link from 'next/link'
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
@@ -10,6 +11,25 @@ const capabilities = [
     {title: "Technology Integration"},
     {title: "Analysis"},
 ]
+
+export const generateMetadata = (): Metadata => {
+    return {
+      title: "My App",
+      description: "This is a Next.js app",
+      openGraph: {
+        images: [
+          {
+            url: "",
+            alt: "Preview image for My App",
+          },
+        ],
+        title: "My App",
+        description: "This is a Next.js app",
+        type: "website",
+      },
+    };
+  };
+  
 
 const page = () => {
   return (

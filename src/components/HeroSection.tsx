@@ -3,9 +3,17 @@ import Link from 'next/link'
 import React, { useCallback, useEffect, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import { heroImages } from '@/utils/util'
+import CircleAnimation from './CircleAnimation'
+import { useRouter } from 'next/navigation'
 
 const HeroSection = () => {
-    const [bubblesSize, setBubblesSize] = useState(() => 0);
+    const [bubblesSize, setBubblesSize] = useState(() => 0)
+    // const [showAnimation, setShowAnimation] = useState(false)
+    const [animation, setAnimation] = useState({
+        display: false,
+        color: "",
+    })
+    const router = useRouter()
     
     function getBubbleSize() {
         if (typeof window === "undefined") return 1.3
@@ -46,6 +54,13 @@ const HeroSection = () => {
             window.removeEventListener('resize', handleResizeOrLoad)
         }
     },[getBubbleSize])
+
+    function spreadCircle(url: string, color: string) {
+        setAnimation({color, display: true})
+        setTimeout(() => {
+            router.push(url)
+        },500)
+    }
     
     return (
     <div className='bg-black pb-32 px-4'>
@@ -53,15 +68,33 @@ const HeroSection = () => {
         {
             heroImages.map((heroImage) => {
                 return (
+                    heroImage.url ?
+
+                    // <Link href={heroImage.url}>
+                        <div
+                            onClick={()=>spreadCircle(heroImage.url, heroImage.color)}
+                            key={uuidv4()}
+                            className={`border-4 border-gray-600 rounded-full bg-cover absolute cursor-pointer`}
+                            style={{
+                                height: `${heroImage.size*bubblesSize}px`,
+                                width: `${heroImage.size*bubblesSize}px`,
+                                top: `${heroImage.top}%`,
+                                left: `${heroImage.left}%`,
+                                backgroundImage: `url(${heroImage.path})`,
+                            }}
+                        ></div>
+                    // </Link> 
+                    :
+
                     <div
                         key={uuidv4()}
                         className={`border-4 border-gray-600 rounded-full bg-cover absolute`}
                         style={{
-                        height: `${heroImage.size*bubblesSize}px`,
-                        width: `${heroImage.size*bubblesSize}px`,
-                        top: `${heroImage.top}%`,
-                        left: `${heroImage.left}%`,
-                        backgroundImage: `url(${heroImage.path})`,
+                            height: `${heroImage.size*bubblesSize}px`,
+                            width: `${heroImage.size*bubblesSize}px`,
+                            top: `${heroImage.top}%`,
+                            left: `${heroImage.left}%`,
+                            backgroundImage: `url(${heroImage.path})`,
                         }}
                     ></div>
                 )
@@ -77,6 +110,9 @@ const HeroSection = () => {
             <Link href="#" className="border border-gray-100 text-center py-6 text-2xl md:text-3xl text-[#178DA1] italic tracking-wider font-cambria font-semibold mt-8 md:mt-0 md:ml-16 w-full hover:bg-[#E1E3E1]">work with us</Link>
         </div>
         </div>
+
+        {/* circle animation */}
+        {animation.display && <CircleAnimation animationColor={animation.color} />}
     </div>
     )
 }

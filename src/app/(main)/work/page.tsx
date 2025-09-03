@@ -25,7 +25,7 @@ export const generateMetadata = async ( { params }: PageProps ): Promise<Metadat
         },
       ],
       title: work?.title,
-      description: work?.subtitle,
+      description: work?.description,
       type: "website",
     },
   };
@@ -34,7 +34,7 @@ export const generateMetadata = async ( { params }: PageProps ): Promise<Metadat
 const page = ( { params }: PageProps ) => {
   const { slug } = use(params);
   const work = getWork(slug);
-  console.log('work',work)
+  
   return (
     <div className="bg-black">
       <div className="text-center text-5xl font-bold text-white italic font-cambria pb-16">

@@ -68,80 +68,111 @@ export const coreValues = [
 
 export const works = [
   {
-    title: "Sunset Bliss Fest",
-    subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae vitae placeat nesciunt quaerat deleniti laboriosam consequuntur maxime quod cupiditate expedita amet vel porro labore, totam repellat voluptas quos similique!",
-    image:
-      "https://plus.unsplash.com/premium_photo-1723300354426-e8c90954f6d5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    elements: [
-      {
-        title: "Objectives, Planning & Execution",
-        subtitle:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae vitae placeat nesciunt quaerat deleniti",
-        bullets: [
-          {
-            title: "Enhance Brand Image",
-            details: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-          },
-          { title: "Engage Customers", details: "" },
-          { title: "Increase Brand Loyalty", details: "" },
-          { title: "Boost Sales", details: "" },
-        ],
-      },
-      {
-        title: "Key Components",
-        bullets: [
-          {
-            title: "Venue & Setup",
-            details: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-          },
-          { title: "Entertainment & Activities", details: "" },
-          { title: "Increase Brand Loyalty", details: "" },
-          { title: "Boost Sales", details: "" },
-        ],
-      },
-      {
-        title: "Conclusion",
-        subtitle:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae vitae placeat nesciunt quaerat deleniti",
-      },
-    ],
-    slug: "sunset-bliss-fest",
+    title: 'Zoa, Wichita',
+    subtitle: '',
+    image: 'https://plus.unsplash.com/premium_photo-1723300354426-e8c90954f6d5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    slug: 'zoa-wichita',
+    description: 'Zoa reached out to us to promote a line of their energy drinks. We love a good outdoor party, and at a basketball game in Wichita, we were proud to have sports fans experience the delicious and energizing taste of Zoa zero sugar energy drinks. Placed next to giants such as Prime hydration and Coors, we were happy to hand out Zoa to discerning patrons, including our men and women in blue at the event.',
   },
   {
-    title: "Beer Pong",
-    image:
-      "https://images.unsplash.com/photo-1568667185695-edcbcd4938cb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    slug: "beer-pong",
+    title: 'Corona On Premise Tasting',
+    subtitle: '',
+    image: 'https://images.unsplash.com/photo-1723743809921-07781a7c6535?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    slug: 'corona-premise',
+    description: 'Batter up! What better way to enjoy The World Series than in a sports bar with friends and family? That’s why Paddy O’s in St. Louis was a perfect place to watch people play ball. Wings, burgers, and the cold refreshing taste of Corona made for an afternoon to remember. This was one game we are likely never to forget!',
   },
-  // {
-  //   title: "",
-  //   image:
-  //     "https://images.unsplash.com/photo-1723743809921-07781a7c6535?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  // },
-  // {
-  //   title: "",
-  //   image:
-  //     "https://images.unsplash.com/photo-1719937206498-b31844530a96?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  // },
-  // {
-  //   title: "",
-  //   image:
-  //     "https://images.unsplash.com/photo-1723766700475-3f8f1d3c0c1a?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  // },
-  // {
-  //   title: "",
-  //   image:
-  //     "https://images.unsplash.com/photo-1719937206255-cc337bccfc7d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  // },
-  // {
-  //   title: "",
-  //   image:
-  //     "https://plus.unsplash.com/premium_photo-1723924941212-b03a8db60215?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  // },
-  // {
-  //   title: "",
-  //   image:
-  //     "https://images.unsplash.com/photo-1723934603827-e5a2dd061ba2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  // },
-];
+  {
+    title: 'Molson Coors Balloon Races',
+    subtitle: '',
+    image: 'https://images.unsplash.com/photo-1723743809921-07781a7c6535?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    slug: 'molson-coors',
+    description: 'An exciting day at the Forest Park Balloon Races was sure to be made better with a cold, enlivening drink! It was a perfect place for us to activate Simply Spiked, a series of delicious, medium-strength alcoholic refreshers by the Molson Coors beverage company. Across two days, as hundreds of patrons enjoyed the festivities, we were there to help them rehydrate and have a great time!',
+  },
+  {
+    title: 'Minus196 Songs for Soldiers',
+    subtitle: '',
+    image: 'https://images.unsplash.com/photo-1719937206498-b31844530a96?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    slug: 'soldiers-songs',
+    description: 'Songs4Soldiers is a charitable organisation and music event dedicated to serving the needs of veterans. We were honored and privileged to represent -196 at the event, doing our part to help everyone there have a good time and raise funds for important services for our veterans.',
+  },
+]
+
+// export const works = [
+//   {
+//     title: "Sunset Bliss Fest",
+//     subtitle:
+//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae vitae placeat nesciunt quaerat deleniti laboriosam consequuntur maxime quod cupiditate expedita amet vel porro labore, totam repellat voluptas quos similique!",
+//     image:
+//       "https://plus.unsplash.com/premium_photo-1723300354426-e8c90954f6d5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//     elements: [
+//       {
+//         title: "Objectives, Planning & Execution",
+//         subtitle:
+//           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae vitae placeat nesciunt quaerat deleniti",
+//         bullets: [
+//           {
+//             title: "Enhance Brand Image",
+//             details: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+//           },
+//           { title: "Engage Customers", details: "" },
+//           { title: "Increase Brand Loyalty", details: "" },
+//           { title: "Boost Sales", details: "" },
+//         ],
+//       },
+//       {
+//         title: "Key Components",
+//         bullets: [
+//           {
+//             title: "Venue & Setup",
+//             details: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+//           },
+//           { title: "Entertainment & Activities", details: "" },
+//           { title: "Increase Brand Loyalty", details: "" },
+//           { title: "Boost Sales", details: "" },
+//         ],
+//       },
+//       {
+//         title: "Conclusion",
+//         subtitle:
+//           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae vitae placeat nesciunt quaerat deleniti",
+//       },
+//     ],
+//     slug: "sunset-bliss-fest",
+//   },
+//   {
+//     title: "Beer Pong",
+//     image:
+//       "https://images.unsplash.com/photo-1568667185695-edcbcd4938cb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//     slug: "beer-pong",
+//   },
+//   {
+//     title: "",
+//     image:
+//       "https://images.unsplash.com/photo-1723743809921-07781a7c6535?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   },
+//   {
+//     title: "",
+//     image:
+//       "https://images.unsplash.com/photo-1719937206498-b31844530a96?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   },
+//   {
+//     title: "",
+//     image:
+//       "https://images.unsplash.com/photo-1723766700475-3f8f1d3c0c1a?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   },
+//   {
+//     title: "",
+//     image:
+//       "https://images.unsplash.com/photo-1719937206255-cc337bccfc7d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   },
+//   {
+//     title: "",
+//     image:
+//       "https://plus.unsplash.com/premium_photo-1723924941212-b03a8db60215?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   },
+//   {
+//     title: "",
+//     image:
+//       "https://images.unsplash.com/photo-1723934603827-e5a2dd061ba2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+//   },
+// ];

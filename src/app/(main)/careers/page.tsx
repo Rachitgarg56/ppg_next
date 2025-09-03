@@ -3,9 +3,9 @@ import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
 const testimonials = [
-    {image: "", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?", name: "John Doe", title: "BA 1", },
-    {image: "", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?", name: "Jane Doe", title: "BA 2", },
-    {image: "", text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?", name: "John Smith", title: "BA 3", },
+    {image: '/assets/images/careers/career1.avif', text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?", name: "John Doe", title: "BA 1", },
+    {image: '/assets/images/careers/career2.avif', text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?", name: "Jane Doe", title: "BA 2", },
+    {image: '/assets/images/careers/career3.avif', text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?", name: "John Smith", title: "BA 3", },
 ]
 
 export const generateMetadata = (): Metadata => {
@@ -37,15 +37,21 @@ const page = () => {
             We’re always on the lookout for young and energetic team members. Because this is an event-based organization, you would work limited hours and make money on the side while having plenty of time to pursue another career or passion.
         </div>
         <div className="flex flex-wrap mx-auto justify-center gap-4 items-center bg-[#178DA1]">
-            {
-                testimonials.map((testimonial) => {
-                    return (
-                        <div key={uuidv4()} className="flex items-center justify-center">
-                            <div className="h-48 w-48 rounded-full bg-white"></div>
-                        </div>
-                    )
-                })
-            }
+
+        {testimonials.map((testimonial) => (
+          <div key={uuidv4()} className="flex items-center justify-center">
+            <div className="h-48 w-48 rounded-full bg-white overflow-hidden">
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                width={192}
+                height={192}
+                className="object-cover h-full w-full rounded-full"
+              />
+            </div>
+          </div>
+        ))}
+
         </div>
     </div>
   )

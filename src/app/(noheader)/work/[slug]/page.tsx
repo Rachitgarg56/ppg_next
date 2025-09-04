@@ -63,38 +63,47 @@ export default function WorkPage({ params }: PageProps) {
             {
               work.elements &&
               work.elements.map((ele) => {
-                if (ele.type == 'list') {
+                if (ele.type === 'list') {
                   return (
                     <div key={ele.title}>
                       <h2 className="text-3xl font-semibold mb-4">{ele.title}</h2>
                       <ul className="ml-8 space-y-1">
-                        {
-                          ele.listItems.map((li) => {
-                            return <li key={li} className="text-2xl">- {li}</li>
-                          })
-                        }
-                      </ul>
-                    </div>
-                  )
-                } else if (ele.type == 'underline') {
-                  return (
-                    <div>
-                      <h2 className="text-3xl font-semibold mb-4">{ele.title}</h2>
-                      <ul className="ml-8 space-y-8">
-                        {
-                          ele.listItems.map((li) => {
+                        {ele.listItems.map((li, index) => {
+                          if (typeof li === "string") {
                             return (
-                              <li key={li.text} className="text-2xl">
-                                <span className="underline underline-offset-2 decoration-1 mr-2">{li.bullet}</span>
-                                <span>{li.text}</span>
+                              <li key={index} className="text-2xl">
+                                - {li}
                               </li>
-                            )
-                          })
-                        }
+                            );
+                          }
+                          return null; 
+                        })}
                       </ul>
                     </div>
                   )
-                }
+                } else if (ele.type === "underline") {
+                    return (
+                      <div key={ele.title}>
+                        <h2 className="text-3xl font-semibold mb-4">{ele.title}</h2>
+                        <ul className="ml-8 space-y-8">
+                          {ele.listItems.map((li, index) => {
+                            if (typeof li !== "string") {
+                              return (
+                                <li key={li.text} className="text-2xl">
+                                  <span className="underline underline-offset-2 decoration-1 mr-2">
+                                    {li.bullet}
+                                  </span>
+                                  <span>{li.text}</span>
+                                </li>
+                              );
+                            }
+                            return null; 
+                          })}
+                        </ul>
+                      </div>
+                    );
+                  }
+
               })
             }
 

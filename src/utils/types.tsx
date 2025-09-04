@@ -1,3 +1,10 @@
+export interface CoreValue {
+    image: string;
+    title: string;
+    subtitle: string;
+    details: string;
+}
+
 export type ListElement = {
   title: string
   type: "list"

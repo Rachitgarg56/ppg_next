@@ -1,25 +1,22 @@
-export interface CoreValue {
-    image: string;
-    title: string;
-    subtitle: string;
-    details: string;
+export type ListElement = {
+  title: string
+  type: "list"
+  listItems: string[]
 }
 
-export interface WorkElementBullet {
-    title?: string;
-    details?: string;
+export type UnderlineElement = {
+  title: string
+  type: "underline"
+  listItems: { bullet: string; text: string }[]
 }
-  
-export interface WorkElement {
-    title?: string;
-    subtitle?: string;
-    bullets?: WorkElementBullet[];
-}
-  
+
+export type WorkElement = ListElement | UnderlineElement
+
 export interface Work {
-    title?: string;
-    subtitle?: string;
-    image?: string;
-    elements?: WorkElement[];
-    slug: string;
+  title: string
+  image: string
+  slug: string
+  description: string
+  conclusion?: string
+  elements?: WorkElement[]
 }

@@ -127,7 +127,7 @@ export const works = [
         ]
       }
     ],
-    conclustion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, quibusdam? Repellendus perferendis ut eaque voluptatem, reprehenderit ducimus error animi vel beatae!',
+    conclusion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, quibusdam? Repellendus perferendis ut eaque voluptatem, reprehenderit ducimus error animi vel beatae!',
   },
   {
     title: 'Corona On Premise Tasting',

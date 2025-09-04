@@ -46,10 +46,10 @@ const PageContent = ({ work, idx }: { work: Work, idx: number }) => {
         </div>
 
         <div className="px-4 py-12 sm:py-24">
-            <div className="max-w-5xl w-full mx-auto space-y-20">
-            <div className="text-[#178DA1] text-3xl text-center leading-relaxed" x-text="selectedWork.subtitle">{work.description}</div>
+            <div className="max-w-5xl w-full mx-auto space-y-12 md:space-y-20">
+            <div className="text-[#178DA1] text-2xl md:text-3xl text-center leading-relaxed" x-text="selectedWork.subtitle">{work.description}</div>
             
-            <div className="pr-68 space-y-16">
+            <div className="lg:pr-68 space-y-8 md:space-y-16">
 
                 {
                 work.elements &&
@@ -57,12 +57,12 @@ const PageContent = ({ work, idx }: { work: Work, idx: number }) => {
                     if (ele.type === 'list') {
                     return (
                         <div key={ele.title}>
-                        <h2 className="text-3xl font-semibold mb-4">{ele.title}</h2>
-                        <ul className="ml-8 space-y-1">
+                        <h2 className="text-2xl md:text-3xl font-semibold mb-4">{ele.title}</h2>
+                        <ul className="ml-4 md:ml-8 space-y-1">
                             {ele.listItems.map((li, index) => {
                             if (typeof li === "string") {
                                 return (
-                                <li key={index} className="text-2xl">
+                                <li key={index} className="text-xl md:text-2xl">
                                     - {li}
                                 </li>
                                 );
@@ -75,12 +75,12 @@ const PageContent = ({ work, idx }: { work: Work, idx: number }) => {
                     } else if (ele.type === "underline") {
                         return (
                         <div key={ele.title}>
-                            <h2 className="text-3xl font-semibold mb-4">{ele.title}</h2>
-                            <ul className="ml-8 space-y-8">
+                            <h2 className="text-2xl md:text-3xl font-semibold mb-4">{ele.title}</h2>
+                            <ul className="ml-4 md:ml-8 space-y-8">
                             {ele.listItems.map((li, index) => {
                                 if (typeof li !== "string") {
                                 return (
-                                    <li key={li.text} className="text-2xl">
+                                    <li key={li.text} className="text-xl md:text-2xl">
                                     <span className="underline underline-offset-2 decoration-1 mr-2">
                                         {li.bullet}
                                     </span>
@@ -100,8 +100,8 @@ const PageContent = ({ work, idx }: { work: Work, idx: number }) => {
 
                 { work.conclusion &&
                 <div>
-                    <h2 className="text-3xl font-semibold mb-4">Conslusion:</h2>
-                    <p className="text-2xl">{work.conclusion}</p>
+                    <h2 className="text-2xl md:text-3xl font-semibold mb-4">Conslusion:</h2>
+                    <p className="text-xl md:text-2xl">{work.conclusion}</p>
                 </div>
                 }
 

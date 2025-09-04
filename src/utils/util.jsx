@@ -71,7 +71,7 @@ export const works = [
     title: 'Zoa, Wichita',
     image: 'https://plus.unsplash.com/premium_photo-1723300354426-e8c90954f6d5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     slug: 'zoa-wichita',
-    description: 'good Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae vitae placeat nesciunt quaerat deleniti laboriosam consequuntur maxime quod cupiditate expedita amet vel porro labore, totam repellat voluptas quos similique!',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae vitae placeat nesciunt quaerat deleniti laboriosam consequuntur maxime quod cupiditate expedita amet vel porro labore, totam repellat voluptas quos similique!',
     elements: [
       {
         title: 'Objectives Planning and Execution:',

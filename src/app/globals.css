@@ -34,8 +34,8 @@ body {
 
 .font-cambria {
   font-family: 'Cambria', serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
-
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

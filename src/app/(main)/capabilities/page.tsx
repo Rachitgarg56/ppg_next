@@ -4,12 +4,12 @@ import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
 const capabilities = [
-    {title: "Event Planning"},
-    {title: "Event Management"},
-    {title: "Interactive Experiences"},
-    {title: "Product Sampling"},
-    {title: "Technology Integration"},
-    {title: "Analysis"},
+    {title: "Event Planning", subtitle: "A good plan ensures you’re not running around on event day. Leave the crunchy preparation to us."},
+    {title: "Event Management", subtitle: "We’re on ground at every event to ensure it goes smoothly."},
+    {title: "Interactive Experiences", subtitle: "Create memorable ventures for every occasion, from sport events to tasting menus and everything in between."},
+    {title: "Product Sampling", subtitle: "Engage real customers with giveaways and samples, collecting crucial feedback from early customers."},
+    {title: "Technology Integration", subtitle: "Be on the forefront of experiential activities designed to boost your product activation from the ground up."},
+    {title: "Analysis", subtitle: "We provide data-driven, actionable insights after every event."},
 ]
 
 export const generateMetadata = (): Metadata => {
@@ -36,7 +36,7 @@ const page = () => {
     <div className='bg-black text-white pb-16'>
         <div className="text-center text-5xl font-bold text-white italic font-cambria">Capabilities</div>
         <div className="w-full md:w-2/3 text-xl md:text-3xl text-center leading-relaxed font-light mt-16 mx-auto">We specialize in crafting events that place your products in front of your ideal consumer. Whether you’re looking for a dedicated special celebration or are interested in collecting primary customer feedback, we’ll work with you to activate your brand.</div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 place-content-center mt-16 md:mt-32 mx-auto w-3/4">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 place-content-center mt-16 md:mt-32 mx-auto w-3/4">
             {
                 capabilities.map((capability) => {
                     return (
@@ -44,10 +44,22 @@ const page = () => {
                     )
                 })
             }
+        </div> */}
+        <div className='space-y-4 max-w-5xl px-4 mx-auto mt-16'>
+          {
+            capabilities.map((capability) => {
+              return (
+                <div>
+                  <h3 className='font-cambria font-bold italic text-2xl sm:text-3xl text-[#178DA1] tracking-wide leading-relaxed'>{capability.title}</h3>
+                  <p className='text-xl opacity-80 font-thin'>{capability.subtitle}</p>
+                </div>
+              )
+            })
+          }
         </div>
         <div className="mt-16 md:mt-32 mx-auto md:w-1/2 text-2xl md:text-4xl text-center font-thin tracking-wide">Connect with us to know how we could collaborate to bubble up your brand</div>
         <div className="text-center mt-16 md:mt-24">
-            <Link href="/careers" className="w-full md:w-max bg-cyan-600 italic text-black text-xl md:text-3xl px-8 md:px-32 py-4 md:py-8">work with us</Link>
+            <Link href="/contact" className="w-full md:w-max bg-cyan-600 italic text-black text-xl md:text-3xl px-8 md:px-32 py-4 md:py-8">work with us</Link>
         </div>
     </div>
   )

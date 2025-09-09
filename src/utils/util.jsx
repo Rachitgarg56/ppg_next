@@ -59,11 +59,11 @@ export const formPagesData = [
 ]
 
 export const coreValues = [
-    {image: "", title: "Partnership", subtitle: "We are here for you", details: "We are here for you, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
-    {image: "", title: "Consistency", subtitle: "We are at it, always", details: "We are at it, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
-    {image: "", title: "Reliability", subtitle: "We got your back", details: "We got your back, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
-    {image: "", title: "Innovation", subtitle: "We lead with creativity", details: "We lead with creativity, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
-    {image: "", title: "Adaptability", subtitle: "We evolve to meet your needs", details: "We evolve to meet your needs, lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?"},
+    {image: "", title: "Partnership", subtitle: "We are here for you", details: "We are an extension of your brand, and have a personal stake in its growth."},
+    {image: "", title: "Consistency", subtitle: "We are at it, always", details: "We pride ourselves on taking care of the event before, during, and after, every time."},
+    {image: "", title: "Reliability", subtitle: "We got your back", details: "40+ brands trust us to be on the ground and represent them to the customer, and we take that seriously."},
+    {image: "", title: "Innovation", subtitle: "We lead with creativity", details: "Interactive marketing is a space ripe for creativity and avant garde ideas, and we do our best to create a strategy that works for you."},
+    {image: "", title: "Adaptability", subtitle: "We evolve to meet your needs", details: "The events space is dynamic, and we’re flexible to meet every change and challenge."},
 ]
 
 export const works = [
@@ -71,81 +71,78 @@ export const works = [
     title: 'Zoa, Wichita',
     image: 'https://plus.unsplash.com/premium_photo-1723300354426-e8c90954f6d5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     slug: 'zoa-wichita',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae vitae placeat nesciunt quaerat deleniti laboriosam consequuntur maxime quod cupiditate expedita amet vel porro labore, totam repellat voluptas quos similique!',
-    elements: [
-      {
-        title: 'Objectives Planning and Execution:',
-        type: 'list',
-        listItems: ['Enhanced brand image', ' Engage consumers', 'Increase brand loyalty', 'Boost sales'],
-      },
-      {
-        title: 'Key Components:',
-        type: 'underline',
-        listItems: [
-          {
-            bullet: 'Venue and Setup:',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab exercitationem voluptatem quam corporis illum cupiditate nesciunt at omnis recusandae alias!',
-          },
-          {
-            bullet: 'Entertainment and Activities:',
-            text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, cum quod alias minima facere ut ipsam explicabo laborum ex labore? Ratione, voluptatem odio.',
-          },
-          {
-            bullet: 'Product sampling and sales:',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam porro reprehenderit perferendis hic impedit possimus expedita nisi ducimus! Hic, fugiat odio?',
-          },
-          {
-            bullet: 'Social Media Integration:',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nemo ipsum recusandae vitae non? Dolorem in adipisci voluptate sit voluptas pariatur quis?',
-          },
-          {
-            bullet: 'Sustainability Efforts:',
-            text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, consequuntur illo id fugiat dolorum perferendis nihil est repellat repellendus necessitatibus harum voluptate voluptates dolor.',
-          },
-        ]
-      },
-      {
-        title: 'Outcomes:',
-        type: 'underline',
-        listItems: [
-          {
-            bullet: 'Brand Engagement:',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab exercitationem voluptatem quam corporis illum cupiditate nesciunt at omnis recusandae alias!',
-          },
-          {
-            bullet: 'Social Media Impact:',
-            text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, cum quod alias minima facere ut ipsam explicabo laborum ex labore? Ratione, voluptatem odio.',
-          },
-          {
-            bullet: 'Sales boost:',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam porro reprehenderit perferendis hic impedit possimus expedita nisi ducimus! Hic, fugiat odio?',
-          },
-          {
-            bullet: 'Sustainibility recognition:',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nemo ipsum recusandae vitae non? Dolorem in adipisci voluptate sit voluptas pariatur quis?',
-          },
-        ]
-      }
-    ],
-    conclusion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, quibusdam? Repellendus perferendis ut eaque voluptatem, reprehenderit ducimus error animi vel beatae!',
+    description: 'Zoa reached out to us to promote a line of their energy drinks. We love a good outdoor party, and at a basketball game in Wichita, we were proud to have sports fans experience the delicious and energizing taste of Zoa zero sugar energy drinks. Placed next to giants such as Prime hydration and Coors, we were happy to hand out Zoa to discerning patrons, including our men and women in blue at the event.',
+    // elements: [
+    //   {
+    //     title: 'Objectives Planning and Execution:',
+    //     type: 'list',
+    //     listItems: ['Enhanced brand image', ' Engage consumers', 'Increase brand loyalty', 'Boost sales'],
+    //   },
+    //   {
+    //     title: 'Key Components:',
+    //     type: 'underline',
+    //     listItems: [
+    //       {
+    //         bullet: 'Venue and Setup:',
+    //         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab exercitationem voluptatem quam corporis illum cupiditate nesciunt at omnis recusandae alias!',
+    //       },
+    //       {
+    //         bullet: 'Entertainment and Activities:',
+    //         text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, cum quod alias minima facere ut ipsam explicabo laborum ex labore? Ratione, voluptatem odio.',
+    //       },
+    //       {
+    //         bullet: 'Product sampling and sales:',
+    //         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam porro reprehenderit perferendis hic impedit possimus expedita nisi ducimus! Hic, fugiat odio?',
+    //       },
+    //       {
+    //         bullet: 'Social Media Integration:',
+    //         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nemo ipsum recusandae vitae non? Dolorem in adipisci voluptate sit voluptas pariatur quis?',
+    //       },
+    //       {
+    //         bullet: 'Sustainability Efforts:',
+    //         text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, consequuntur illo id fugiat dolorum perferendis nihil est repellat repellendus necessitatibus harum voluptate voluptates dolor.',
+    //       },
+    //     ]
+    //   },
+    //   {
+    //     title: 'Outcomes:',
+    //     type: 'underline',
+    //     listItems: [
+    //       {
+    //         bullet: 'Brand Engagement:',
+    //         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab exercitationem voluptatem quam corporis illum cupiditate nesciunt at omnis recusandae alias!',
+    //       },
+    //       {
+    //         bullet: 'Social Media Impact:',
+    //         text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, cum quod alias minima facere ut ipsam explicabo laborum ex labore? Ratione, voluptatem odio.',
+    //       },
+    //       {
+    //         bullet: 'Sales boost:',
+    //         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam porro reprehenderit perferendis hic impedit possimus expedita nisi ducimus! Hic, fugiat odio?',
+    //       },
+    //       {
+    //         bullet: 'Sustainibility recognition:',
+    //         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nemo ipsum recusandae vitae non? Dolorem in adipisci voluptate sit voluptas pariatur quis?',
+    //       },
+    //     ]
+    //   }
+    // ],
+    // conclusion: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, quibusdam? Repellendus perferendis ut eaque voluptatem, reprehenderit ducimus error animi vel beatae!',
   },
   {
     title: 'Corona On Premise Tasting',
-    subtitle: '',
     image: 'https://images.unsplash.com/photo-1723743809921-07781a7c6535?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     slug: 'corona-premise',
     description: 'Batter up! What better way to enjoy The World Series than in a sports bar with friends and family? That’s why Paddy O’s in St. Louis was a perfect place to watch people play ball. Wings, burgers, and the cold refreshing taste of Corona made for an afternoon to remember. This was one game we are likely never to forget!',
   },
   {
     title: 'Molson Coors Balloon Races',
-    subtitle: '',
     image: 'https://images.unsplash.com/photo-1723743809921-07781a7c6535?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     slug: 'molson-coors',
-    description: 'An exciting day at the Forest Park Balloon Races was sure to be made better with a cold, enlivening drink! It was a perfect place for us to activate Simply Spiked, a series of delicious, medium-strength alcoholic refreshers by the Molson Coors beverage company. Across two days, as hundreds of patrons enjoyed the festivities, we were there to help them rehydrate and have a great time!',
+    description: 'An exciting day at the Forest Park Balloon Races was sure to be made better with a cold, enlivening drink! It was a perfect place for us to activate Simply Spiked, a series of delicious, medium-strength alcoholic refreshers by the Molson Coors beverage company. Across two days, as hundreds of patrons enjoyed the festivities, we were there to help them quench their thirst and have a great time!',
   },
   {
     title: 'Minus196 Songs for Soldiers',
-    subtitle: '',
     image: 'https://images.unsplash.com/photo-1719937206498-b31844530a96?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     slug: 'soldiers-songs',
     description: 'Songs4Soldiers is a charitable organisation and music event dedicated to serving the needs of veterans. We were honored and privileged to represent -196 at the event, doing our part to help everyone there have a good time and raise funds for important services for our veterans.',

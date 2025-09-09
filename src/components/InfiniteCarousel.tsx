@@ -42,7 +42,7 @@ const InfiniteCarousel = ({ data }: PageProps) => {
                        gap-6 px-4 lg:px-10 py-8 lg:py-28 ${(idx % 2 === 0) ? 'bg-[#1C7A8A]' : 'bg-[#125F6C]'}`}
             style={{ width: `${cardWidth}vw` }}
           >
-            <div className="w-[70%] lg:w-[40%] aspect-square self-center bg-white rounded-full"></div>
+            <div className="w-[70%] lg:w-[40%] aspect-square self-center bg-white text-black flex items-center justify-center text-lg font-cambria font-bold italic rounded-full">{data.title}</div>
             <p className="lg:w-[60%] lg:text-left lg:text-xl opacity-80 max-sm:line-clamp-4">{data.text}</p>
           </div>
         ))}

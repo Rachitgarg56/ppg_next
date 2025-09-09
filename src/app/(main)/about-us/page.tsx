@@ -4,9 +4,10 @@ import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
 const teamMembers = [
-    {name: "Kourtney Houston", designation: "Owner", blurb: "Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit consequunt", image: "", },
-    {name: "Shale Houston", designation: "Owner", blurb: "Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit consequunt", image: "", },
-]
+    {name: "Kourtney Houston", designation: "Owner", blurb: "After a career as a cosmetologist, Kourtney was ready to go on the greatest adventure of her life when she founded PPG in 2011. A master of staffing and problem solving, she loves the exciting space of events and interactive marketing. Outside of work, Kourtney enjoys cooking for friends and family.", image: "", },
+    {name: "Shale Houston", designation: "Owner", blurb: "Shale joined PPG during the pandemic, bringing 20+ years of sales and business experience and a willingness to take charge. He enjoys working in this industry precisely because there’s a different challenge every day. When not working, Shale enjoys hosting friends and family and boating.", image: "", },
+    {name: "Carrie Schoening", designation: "Manager", blurb: "Almost nothing happens here without Carrie’s effort and involvement. Carrie is the backend and calendar manager at PPG and has been a central member since 2014. Outside of work, Carrie is busy with her children and rescue animals, including the Irish wolfhounds she raises.", image: "", },
+  ]
 
 export const generateMetadata = (): Metadata => {
   return {
@@ -30,7 +31,7 @@ const page = () => {
     return (
         <div className='bg-gradient-to-r from-[#125F6C] via-[#1C7A8A] via-30% to-[#178DA1] text-white pt-8'>
             <div className="text-center text-5xl font-bold text-white italic font-cambria">About Us</div>
-            <div className="text-2xl md:text-3xl font-thin mt-16 w-full lg:w-2/3 mx-auto text-center px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa in? Aliquid illum neque dicta, corporis accusantium molestiae eaque, sint necessitatibus quas, deserunt aperiam impedit odio itaque eligendi?</div>
+            <div className="text-2xl md:text-3xl font-thin mt-16 w-full lg:w-2/3 mx-auto text-center px-4">Prestige Promotions Group was founded in 2011 with a desire to raise the standards of interactive marketing and go directly to the customer. Since then, the company has continued to grow its portfolio, working in 6 states with over 40 brands. PPG is unique because it considers itself an extension of its partner brands and distributors, which means it takes a personal stake on each promotion project.</div>
             <div className="w-full lg:w-2/3 mx-auto mt-16 px-4">
                 {
                     teamMembers.map((member) => {

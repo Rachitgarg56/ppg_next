@@ -1,7 +1,6 @@
-import Header from '@/components/Header'
 import InfiniteCarousel from '@/components/InfiniteCarousel'
+import Image from 'next/image'
 import React from 'react'
-import { v4 as uuidv4 } from 'uuid'
 
 const testimonials = [
     {image: '/assets/images/careers/career1.avif', text: " Events are mercurial and volatile. In the days leading up to an event and on the day itself, there will be dozens of problems, no matter how well you plan. Vendors might go silent, logistics might fail, and it might rain on your parade. These problems should excite you, not overwhelm you.", name: "John Doe", title: "Dynamism", },
@@ -23,6 +22,8 @@ const PageContent = () => {
         <InfiniteCarousel data={testimonials} />
 
         <div className='flex flex-col items-center gap-8 px-4 py-16'>
+            <Image src={'/assets/images/careers/BA_cluster.png'} alt={'images-cluster'} width={600} height={397}/>
+
             <p className='text-2xl sm:text-3xl font-thin tracking-wide leading-relaxed text-center'>Join our growing family of happy brand ambassadors</p>
 
             <button className='text-2xl text-[#178DA1] sm:text-3xl max-sm:text-xl max-sm:px-8 px-12 sm:px-16 py-6 bg-black tracking-wide leading-relaxed text-center font-cambria font-bold italic cursor-pointer mt-4'>check open positions</button>

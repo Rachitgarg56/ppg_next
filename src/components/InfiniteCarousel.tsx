@@ -9,10 +9,31 @@ interface PageProps {
 const InfiniteCarousel = ({ data }: PageProps) => {
   const duplicatedData = [...data, ...data];
   const [finalData] = useState(duplicatedData);
+  const [cardWidth, setCardWidth] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth > 768 ? 42.5 : 75;
+    }
+    return 42.5; 
+  });
 
   // const cardWidth = 42.5; // vw
-  const cardWidth = window.innerWidth > 768 ? 42.5 : 75;
+  // const cardWidth = window && window.innerWidth > 768 ? 42.5 : 75;
   const [translateX, setTranslateX] = useState(0);
+
+  useEffect(() => {
+    const updateCardWidth = () => {
+      if (window.innerWidth > 768) {
+        setCardWidth(42.5);
+      } else {
+        setCardWidth(75);        
+      }
+    }
+
+    updateCardWidth();
+    window.addEventListener('resize', updateCardWidth);
+
+    return () => window.removeEventListener('resize', updateCardWidth);
+  }, []);
 
   useEffect(() => {
     // kick off movement after mount
@@ -21,13 +42,13 @@ const InfiniteCarousel = ({ data }: PageProps) => {
     }, 3000); // every 3s
 
     return () => clearInterval(interval);
-  }, []);
+  }, [cardWidth]);
 
   useEffect(() => {
     if (Math.abs(translateX + cardWidth) == ((finalData.length * cardWidth) / 2)) {
         setTranslateX(0);
     }
-  },[translateX])
+  },[translateX, cardWidth, finalData.length]);
 
   return (
     <div className="outer-container w-screen overflow-hidden">

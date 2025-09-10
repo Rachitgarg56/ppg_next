@@ -31,7 +31,7 @@ const page = () => {
     return (
         <div className='bg-gradient-to-r from-[#125F6C] via-[#1C7A8A] via-30% to-[#178DA1] text-white pt-8'>
             <div className="text-center text-5xl font-bold text-white italic font-cambria">About Us</div>
-            <div className="text-2xl md:text-3xl font-thin mt-16 w-full lg:w-2/3 mx-auto text-center px-4">Prestige Promotions Group was founded in 2011 with a desire to raise the standards of interactive marketing and go directly to the customer. Since then, the company has continued to grow its portfolio, working in 6 states with over 40 brands. PPG is unique because it considers itself an extension of its partner brands and distributors, which means it takes a personal stake on each promotion project.</div>
+            <div className="text-2xl md:text-3xl font-thin mt-16 w-full lg:w-2/3 mx-auto text-center px-4 leading-relaxed tracking-wide">Prestige Promotions Group was founded in 2011 with a desire to raise the standards of interactive marketing and go directly to the customer. Since then, the company has continued to grow its portfolio, working in 6 states with over 40 brands. PPG is unique because it considers itself an extension of its partner brands and distributors, which means it takes a personal stake on each promotion project.</div>
             <div className="w-full lg:w-2/3 mx-auto mt-16 px-4">
                 {
                     teamMembers.map((member) => {

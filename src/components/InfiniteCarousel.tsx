@@ -10,7 +10,8 @@ const InfiniteCarousel = ({ data }: PageProps) => {
   const duplicatedData = [...data, ...data];
   const [finalData] = useState(duplicatedData);
 
-  const cardWidth = 42.5; // vw
+  // const cardWidth = 42.5; // vw
+  const cardWidth = window.innerWidth > 768 ? 42.5 : 75;
   const [translateX, setTranslateX] = useState(0);
 
   useEffect(() => {
@@ -43,7 +44,7 @@ const InfiniteCarousel = ({ data }: PageProps) => {
             style={{ width: `${cardWidth}vw` }}
           >
             <div className="w-[70%] lg:w-[40%] aspect-square self-center bg-white text-black flex items-center justify-center text-lg font-cambria font-bold italic rounded-full">{data.title}</div>
-            <p className="lg:w-[60%] lg:text-left lg:text-xl opacity-80 max-sm:line-clamp-4">{data.text}</p>
+            <p className="lg:w-[60%] lg:text-left font-thin text-xl opacity-80 max-sm:line-clamp-4">{data.text}</p>
           </div>
         ))}
       </div>

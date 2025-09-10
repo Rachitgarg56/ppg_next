@@ -39,17 +39,17 @@ export default function Home() {
       <Clients/>
 
       {/*  Buttons */}
-      <div className="bg-black flex flex-col md:flex-row items-center justify-center space-x-4 pb-16">
+      <div className="bg-black flex flex-row md:flex-row items-center justify-center space-x-4 pb-16">
           <Link href={'/contact'}>
-            <div className="relative w-80 h-80 rounded-full bg-[#178DA1] text-white flex items-center justify-center text-3xl font-semibold font-cambria italic">
+            <div className="relative w-48 h-48 sm:w-80 sm:h-80 rounded-full bg-[#178DA1] text-white flex items-center justify-center text-2xl sm:text-3xl font-semibold font-cambria italic">
               <img className='w-full object-cover' src="/assets/images/home/work-with-us.png" alt="work-with-us" />
-              <span className='absolute top-[15%] cambria bold italic text-center'>Work <br /> with us</span>
+              <span className='absolute top-[5%] sm:top-[15%] cambria bold italic text-center'>Work <br /> with us</span>
             </div>
           </Link>
           <Link href={'/careers'}>
-            <div className="relative w-56 h-56 rounded-full bg-[#178DA1] mt-8 md:mt-48 text-white flex items-center justify-center text-2xl font-semibold font-cambria italic">
+            <div className="relative w-36 h-36 sm:w-56 sm:h-56 rounded-full bg-[#178DA1] mt-44 md:mt-48 text-white flex items-center justify-center text-xl sm:text-2xl font-semibold font-cambria italic">
               <img className='w-full object-cover' src="/assets/images/home/work-for-us.png" alt="work-with-us" />
-              <span className='absolute top-[25%] left-[20%] cambria bold italic text-center'>Work <br /> for us</span>
+              <span className='absolute sm:top-[25%] top-[20%] left-[15%] sm:left-[20%] cambria bold italic text-center'>Work <br /> for us</span>
             </div>
           </Link>
       </div>

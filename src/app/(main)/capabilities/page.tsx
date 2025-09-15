@@ -45,11 +45,11 @@ const page = () => {
                 })
             }
         </div> */}
-        <div className='max-w-5xl mx-auto mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16'>
+        <div className='max-w-5xl mx-auto mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16'>
           {
-            capabilities.map((capability) => {
+            capabilities.map((capability,idx) => {
               return (
-                <div>
+                <div className={`${idx !== capabilities.length-1 ? 'max-md:shadow-[inset_0_-0.5px_0_0_#178DA1]' : ''} pb-12`}>
                   <h3 className='font-cambria font-bold italic text-2xl sm:text-3xl text-[#178DA1] tracking-wide leading-relaxed text-center'>{capability.title}</h3>
                   <p className='text-xl md:text-2xl opacity-80 font-thin text-center'>{capability.subtitle}</p>
                 </div>

@@ -107,8 +107,8 @@ const HeroSection = () => {
             <h2 className='text-gray-100 text-3xl md:text-4xl mb-4 font-semibold'>You're the life of the party!</h2>
             <div className="font-thin text-gray-100 text-2xl md:text-3xl leading-relaxed md:leading-relaxed">Your brand deserves to be brought to the right people at the right time. We'll make sure you flow.</div>
             <div className="flex flex-col md:flex-row items-center justify-between mt-24">
-                <Link href="/capabilities" className="border border-gray-100 text-center py-6 text-2xl md:text-3xl text-[#178DA1] italic font-cambria font-bold w-full hover:bg-[#E1E3E1]">capabilities</Link>
-                <Link href="/careers" className="border border-gray-100 text-center py-6 text-2xl md:text-3xl text-[#178DA1] italic font-cambria font-bold mt-8 md:mt-0 md:ml-16 w-full hover:bg-[#E1E3E1]">work with us</Link>
+                <Link href="/capabilities" className="shadow-[inset_0_0_0_0.5px_rgba(255,255,255,0.6)] text-center py-6 text-2xl md:text-3xl text-[#178DA1] italic font-cambria font-bold w-full hover:bg-[#E1E3E1] transition-colors duration-500 ease-in-out">capabilities</Link>
+                <Link href="/careers" className="shadow-[inset_0_0_0_0.5px_rgba(255,255,255,0.6)] text-center py-6 text-2xl md:text-3xl text-[#178DA1] italic font-cambria font-bold mt-8 md:mt-0 md:ml-16 w-full hover:bg-[#E1E3E1] transition-colors duration-500 ease-in-out">work with us</Link>
             </div>
         </div>
 

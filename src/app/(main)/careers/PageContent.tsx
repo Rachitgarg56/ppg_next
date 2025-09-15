@@ -1,5 +1,6 @@
 import InfiniteCarousel from '@/components/InfiniteCarousel'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const testimonials = [
@@ -30,7 +31,9 @@ const PageContent = () => {
 
             <p className='text-xl text-center opacity-80'>Didn't find a suitable position? {' '}
                 <br className='block md:hidden' />
-                <span className='text-black underline cursor-pointer'>Send us a message</span> {' '}
+                <Link href={'/contact'}>
+                    <span className='text-black underline cursor-pointer'>Send us a message</span> {' '}
+                </Link>
                 <br className='hidden md:block' />
                 of what you're looking for and we'll get back to you.
             </p>

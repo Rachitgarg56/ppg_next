@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div className="bg-black text-gray-100 flex items-center justify-between px-8 py-8 md:px-32 md:py-32">
+    <div className="bg-black text-gray-100 flex items-center justify-between px-8 py-12 md:px-32 md:py-16">
         <div className="text-sm md:text-2xl">
             <div className="font-bold tracking-wide">Prestige Promotions Group LLC</div>
             <div className="font-light tracking-wider">St Louis, Missouri, United States</div>

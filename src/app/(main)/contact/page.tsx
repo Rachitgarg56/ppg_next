@@ -22,7 +22,7 @@ export const generateMetadata = (): Metadata => {
 
 const page = () => {
     return (
-        <div className='bg-gradient-to-r from-[#125F6C] via-[#1C7A8A] via-30% to-[#178DA1] text-white h-[400px] py-16 px-4'>
+        <div className='bg-gradient-to-r from-[#125F6C] via-[#1C7A8A] via-30% to-[#178DA1] text-white h-[600px] sm:h-[400px] py-16 px-4'>
             <div className="text-center text-5xl font-bold text-white italic font-cambria">Get in touch</div>
             <div className="text-center text-3xl md:text-4xl font-bold italic mt-16 text-gray-900 font-cambria">(123) 456 7890</div>
             <div className="text-center mt-8 font-cambria font-bold">

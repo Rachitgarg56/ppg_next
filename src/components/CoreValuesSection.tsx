@@ -53,7 +53,7 @@ const CoreValuesSection = () => {
                     </svg>
                 </button>
                 <div className="text-4xl font-semibold font-cambria italic">{selectedCoreValue.title}</div>
-                <div className="text-2xl leading-relaxed font-light mt-8">{selectedCoreValue.details}</div>
+                <div className="text-2xl leading-relaxed font-thin tracking-wide mt-8">{selectedCoreValue.details}</div>
             </div>
         </>
     )

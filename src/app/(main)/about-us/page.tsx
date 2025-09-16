@@ -29,19 +29,19 @@ export const generateMetadata = (): Metadata => {
 
 const page = () => {
     return (
-        <div className='bg-gradient-to-r from-[#125F6C] via-[#1C7A8A] via-30% to-[#178DA1] text-white pt-8'>
+        <div className='bg-gradient-to-r from-[#125F6C] via-[#1C7A8A] via-30% to-[#178DA1] text-white pt-4'>
             <div className="text-center text-5xl font-bold text-white italic font-cambria">About Us</div>
-            <div className="text-2xl md:text-3xl font-thin mt-16 w-full lg:w-2/3 mx-auto text-center px-4 leading-relaxed tracking-wide">Prestige Promotions Group was founded in 2011 with a desire to raise the standards of interactive marketing and go directly to the customer. Since then, the company has continued to grow its portfolio, working in 6 states with over 40 brands. PPG is unique because it considers itself an extension of its partner brands and distributors, which means it takes a personal stake on each promotion project.</div>
-            <div className="w-full lg:w-2/3 mx-auto mt-16 px-4">
+            <div className="text-2xl md:text-3xl font-thin mt-12 w-full lg:w-2/3 mx-auto text-center px-4 leading-relaxed tracking-wide">Prestige Promotions Group was founded in 2011 with a desire to raise the standards of interactive marketing and go directly to the customer. Since then, the company has continued to grow its portfolio, working in 6 states with over 40 brands. PPG is unique because it considers itself an extension of its partner brands and distributors, which means it takes a personal stake on each promotion project.</div>
+            <div className="w-full lg:w-2/3 mx-auto px-4 flex flex-col gap-24 md:gap-28 my-24 md:my-32">
                 {
                     teamMembers.map((member) => {
                         return (
-                            <div key={uuidv4()} className="grid grid-cols-1 md:grid-cols-2 md:gap-4 justify-items-center items-center mb-16">
+                            <div key={uuidv4()} className="grid grid-cols-1 md:grid-cols-2 md:gap-4 justify-items-center items-center">
                                 <div className="w-64 md:w-80 h-64 md:h-80 bg-gray-100 rounded-full"></div>
                                 <div className="leading-relaxed mt-8 md:mt-0">
                                     <h2 className="text-center md:text-left text-2xl md:text-3xl font-semibold italic font-cambria">{member.name}</h2>
-                                    <h3 className="text-center md:text-left text-xl md:text-2xl font-thin italic">{member.designation}</h3>
-                                    <p className="text-xl text-center md:text-left md:text-2xl mt-8 font-thin">{member.blurb}</p>
+                                    <h3 className="text-center md:text-left text-xl md:text-2xl font-thin italic mt-1">{member.designation}</h3>
+                                    <p className="text-xl text-center md:text-left md:text-2xl mt-4 md:mt-8 font-thin">{member.blurb}</p>
                                 </div>
                             </div>
                         )

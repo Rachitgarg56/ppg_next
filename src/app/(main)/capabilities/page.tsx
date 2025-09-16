@@ -45,20 +45,25 @@ const page = () => {
                 })
             }
         </div> */}
-        <div className='max-w-5xl mx-auto mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16'>
-          {
-            capabilities.map((capability,idx) => {
-              return (
-                <div className={`${idx !== capabilities.length-1 ? 'max-md:shadow-[inset_0_-0.5px_0_0_#178DA1]' : ''} pb-12`}>
-                  <h3 className='font-cambria font-bold italic text-2xl sm:text-3xl text-[#178DA1] tracking-wide leading-relaxed text-center'>{capability.title}</h3>
-                  <p className='text-xl md:text-2xl opacity-80 font-thin text-center'>{capability.subtitle}</p>
-                </div>
-              )
-            })
-          }
+        <div className='max-w-5xl mx-auto mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 gap-12 gap-x-40'>
+          {capabilities.map((capability, idx) => {
+            return (
+              <div key={idx} className="md:pb-12 flex flex-col items-center">
+                <h3 className="font-cambria font-bold italic text-2xl sm:text-3xl text-[#178DA1] tracking-wide leading-relaxed text-center">
+                  {capability.title}
+                </h3>
+                <p className="text-xl md:text-2xl opacity-80 font-thin text-center">
+                  {capability.subtitle}
+                </p>
+
+                {/* short separator line */}
+                <div className="h-[1px] w-[60px] bg-[#178DA1] mt-14 max-md:block hidden"></div>
+              </div>
+            )
+          })}
         </div>
-        <div className="mt-16 md:mt-32 mx-auto md:w-1/2 text-2xl md:text-3xl text-center font-thin tracking-wide">Connect with us to know how we could collaborate to bubble up your brand</div>
-        <div className="text-center mt-16 md:mt-24">
+        <div className="mt-20 md:mt-32 mx-auto md:w-1/2 text-2xl md:text-3xl text-center font-thin leading-relaxed tracking-wide">Connect with us to know how we could collaborate to bubble up your brand</div>
+        <div className="text-center mt-10 md:mt-24">
             <Link href="/contact" className="w-full md:w-max bg-cyan-600 italic font-cambria font-bold text-black text-2xl md:text-3xl px-8 md:px-32 py-4 md:py-8">work with us</Link>
         </div>
     </div>

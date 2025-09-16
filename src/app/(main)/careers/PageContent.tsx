@@ -29,13 +29,13 @@ const PageContent = () => {
 
             <button className='text-2xl text-[#178DA1] sm:text-3xl max-sm:px-8 px-12 sm:px-16 py-6 bg-black leading-relaxed text-center font-cambria font-bold italic cursor-pointer mt-4 md:mt-8'>check open positions</button>
 
-            <p className='text-xl text-center opacity-80 mt-12 font-thin leading-relaxed tracking-wide md:mt-16'>Didn't find a suitable position? {' '}
+            <p className='text-xl text-center opacity-80 mt-12 leading-relaxed tracking-wide md:mt-16'><span className='font-thin'>Didn't find a suitable position?</span> {' '}
                 <br className='block md:hidden' />
                 <Link href={'/contact'}>
                     <span className='text-black underline cursor-pointer'>Send us a message</span> {' '}
                 </Link>
                 <br className='hidden md:block' />
-                of what you're looking for and we'll get back to you.
+                <span className='font-thin'>of what you're looking for and we'll get back to you.</span>
             </p>
         </div>
 

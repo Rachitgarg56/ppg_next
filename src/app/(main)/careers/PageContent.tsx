@@ -4,9 +4,9 @@ import Link from 'next/link'
 import React from 'react'
 
 const testimonials = [
-    {image: '/assets/images/careers/career1.avif', text: " Events are mercurial and volatile. In the days leading up to an event and on the day itself, there will be dozens of problems, no matter how well you plan. Vendors might go silent, logistics might fail, and it might rain on your parade. These problems should excite you, not overwhelm you.", name: "John Doe", title: "Dynamism", },
-    {image: '/assets/images/careers/career2.avif', text: "We are an extension of the brands we’re promoting, and we are their representatives to the customer. It is important for you to put your best foot forward so that we can give our patrons the best experience possible.", name: "Jane Doe", title: "Professionalism", },
-    {image: '/assets/images/careers/career3.avif', text: "Events are for people, by people. You should enjoy talking to people and be a positive presence on the ground. Be the sort of magnetic personality that people remember.", name: "John Smith", title: "People skills", },
+    {image: '/assets/images/careers/careerspage-dynamic.png', text: " Events are mercurial and volatile. In the days leading up to an event and on the day itself, there will be dozens of problems, no matter how well you plan. Vendors might go silent, logistics might fail, and it might rain on your parade. These problems should excite you, not overwhelm you.", name: "John Doe", title: "Dynamism", },
+    {image: '/assets/images/careers/careerspage-proffessional.png', text: "We are an extension of the brands we’re promoting, and we are their representatives to the customer. It is important for you to put your best foot forward so that we can give our patrons the best experience possible.", name: "Jane Doe", title: "Professionalism", },
+    {image: '/assets/images/careers/careerspage-communicative.png', text: "Events are for people, by people. You should enjoy talking to people and be a positive presence on the ground. Be the sort of magnetic personality that people remember.", name: "John Smith", title: "People skills", },
 ]
 
 const PageContent = () => {

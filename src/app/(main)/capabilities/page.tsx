@@ -4,12 +4,12 @@ import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
 const capabilities = [
-    {title: "Event Planning", subtitle: "A good plan ensures you’re not running around on event day. Leave the crunchy preparation to us."},
-    {title: "Event Management", subtitle: "We’re on ground at every event to ensure it goes smoothly."},
-    {title: "Interactive Experiences", subtitle: "Create memorable ventures for every occasion, from sport events to tasting menus and everything in between."},
-    {title: "Product Sampling", subtitle: "Engage real customers with giveaways and samples, collecting crucial feedback from early customers."},
-    {title: "Technology Integration", subtitle: "Be on the forefront of experiential activities designed to boost your product activation from the ground up."},
-    {title: "Analysis", subtitle: "We provide data-driven, actionable insights after every event."},
+    {image: "/assets/images/capabilities/event-planning.png", title: "Event Planning", subtitle: "A good plan ensures you’re not running around on event day. Leave the crunchy preparation to us."},
+    {image: "/assets/images/capabilities/event-management.png", title: "Event Management", subtitle: "We’re on ground at every event to ensure it goes smoothly."},
+    {image: "/assets/images/capabilities/interactive-experiences.png", title: "Interactive Experiences", subtitle: "Create memorable ventures for every occasion, from sport events to tasting menus and everything in between."},
+    {image: "/assets/images/capabilities/product-sampling.png", title: "Product Sampling", subtitle: "Engage real customers with giveaways and samples, collecting crucial feedback from early customers."},
+    {image: "/assets/images/capabilities/technology-integration.png", title: "Technology Integration", subtitle: "Be on the forefront of experiential activities designed to boost your product activation from the ground up."},
+    {image: "/assets/images/capabilities/analytics.png", title: "Analysis", subtitle: "We provide data-driven, actionable insights after every event."},
 ]
 
 export const generateMetadata = (): Metadata => {
@@ -28,7 +28,7 @@ export const generateMetadata = (): Metadata => {
         type: "website",
       },
     };
-  };
+};
   
 
 const page = () => {

@@ -74,7 +74,7 @@ const HeroSection = () => {
                         <div
                             onClick={()=>spreadCircle(heroImage.url, heroImage.color)}
                             key={uuidv4()}
-                            className={`border-4 border-gray-600 rounded-full bg-cover absolute cursor-pointer`}
+                            className={`shadow-[inset_0_0_0_0.5px_rgba(255,255,255,0.6)] rounded-full bg-cover absolute cursor-pointer`}
                             style={{
                                 height: `${heroImage.size*bubblesSize}px`,
                                 width: `${heroImage.size*bubblesSize}px`,
@@ -88,7 +88,7 @@ const HeroSection = () => {
 
                     <div
                         key={uuidv4()}
-                        className={`border-4 border-gray-600 rounded-full bg-cover absolute`}
+                        className={`shadow-[inset_0_0_0_0.5px_rgba(255,255,255,0.6)] rounded-full bg-cover absolute`}
                         style={{
                             height: `${heroImage.size*bubblesSize}px`,
                             width: `${heroImage.size*bubblesSize}px`,

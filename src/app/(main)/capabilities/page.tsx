@@ -49,7 +49,10 @@ const page = () => {
           {capabilities.map((capability, idx) => {
             return (
               <div key={idx} className="md:pb-12 flex flex-col items-center">
-                <h3 className="font-cambria font-bold italic text-2xl sm:text-3xl text-[#178DA1] tracking-wide leading-relaxed text-center">
+                <figure className='w-48 h-48 rounded-full'>
+                  <img src={capability.image} alt={capability.title} />
+                </figure>
+                <h3 className="font-cambria font-bold italic text-2xl sm:text-3xl text-[#178DA1] tracking-wide leading-relaxed text-center mt-4">
                   {capability.title}
                 </h3>
                 <p className="text-xl md:text-2xl opacity-80 font-thin text-center">

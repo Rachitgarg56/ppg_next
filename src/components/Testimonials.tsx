@@ -20,7 +20,7 @@ const Testimonials = () => {
   }
 
   return (
-    <div className="bg-gradient-to-r from-[#125F6C] via-[#1C7A8A] via-30% to-[#178DA1] text-white text-center sm:py-20 overflow-hidden">
+    <div className="bg-gradient-to-r from-[#125F6C] via-[#1C7A8A] via-30% to-[#178DA1] text-white text-center max-md:pt-20 sm:py-20 overflow-hidden">
       <div className="relative w-full lg:w-2/3 mx-auto flex items-center justify-between p-4">
         
         {/* Prev button */}

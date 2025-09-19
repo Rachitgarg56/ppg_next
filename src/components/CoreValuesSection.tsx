@@ -22,16 +22,16 @@ const CoreValuesSection = () => {
     return (
         <>
             <div className="bg-black py-16 md:py-32">
-                <h2 className="text-center text-[#178DA1] text-4xl italic font-semibold font-cambria">Our core values</h2>
+                <h2 className="text-center text-[#178DA1] text-4xl sm:text-5xl italic font-semibold font-cambria">Our core values</h2>
                 <div className="w-full lg:w-2/3 mx-auto mt-16 md:mt-32">
                     {
                         coreValues.map((value) => {
                             return (
-                                <div key={uuidv4()} className="w-full flex items-center mt-8 p-4">
+                                <div key={uuidv4()} className="w-full flex items-center mt-8 px-4">
                                     {/* <div className="h-24 md:h-48 w-24 md:w-48 rounded-full bg-gray-100"></div> */}
-                                    <div className="bg-gradient-to-r from-gray-700/10 via-gray-700 to-gray-700/10 shadow p-4 md:p-16">
-                                        <div className="text-2xl md:text-4xl italic text-white font-cambria">{value.title}</div>
-                                        <div className="text-xl font-semibold md:text-3xl text-[#178DA1]">{value.subtitle}</div>
+                                    <div className="bg-gradient-to-r from-gray-700/10 via-gray-700 to-gray-700/10 shadow p-4 md:p-16 w-full border-l-[5px] sm:border-l-[10px] border-solid border-[#178DA1]">
+                                        <div className="text-2xl font-semibold md:text-4xl italic text-white font-cambria">{value.title}</div>
+                                        <div className="text-xl md:text-3xl text-[#178DA1]">{value.subtitle}</div>
                                         <div className='text-white text-lg md:text-2xl leading-relaxed font-light mt-2 md:mt-4'>{value.details}</div>
                                     </div>
                                     {/* <button className="text-4xl text-white" onClick={()=>showDetails(value)}>

@@ -25,7 +25,7 @@ const PageContent = () => {
         <div className='flex flex-col items-center px-4 py-16'>
             <Image src={'/assets/images/careers/BA_cluster.png'} alt={'images-cluster'} width={600} height={397}/>
 
-            <p className='text-2xl sm:text-3xl font-thin tracking-wide leading-relaxed text-center mt-12'>Join our growing family of happy brand ambassadors</p>
+            <p className='text-2xl sm:text-3xl font-thin tracking-wide leading-relaxed text-center mt-20'>Join our growing family of happy brand ambassadors</p>
 
             <button className='text-2xl text-[#178DA1] sm:text-3xl max-sm:px-8 px-12 sm:px-16 py-6 bg-black leading-relaxed text-center font-cambria font-bold italic cursor-pointer mt-4 md:mt-8'>check open positions</button>
 

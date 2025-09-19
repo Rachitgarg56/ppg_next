@@ -33,7 +33,7 @@ export const generateMetadata = (): Metadata => {
 
 const page = () => {
   return (
-    <div className='bg-black text-white pb-16 px-8'>
+    <div className='bg-black text-white pb-24 px-8'>
         <div className="text-center text-5xl font-bold text-white italic font-cambria">Capabilities</div>
         <div className="w-full md:w-2/3 text-2xl md:text-3xl text-center leading-relaxed font-thin mt-16 mx-auto">We specialize in crafting events that place your products in front of your ideal consumer. Whether you’re looking for a dedicated special celebration or are interested in collecting primary customer feedback, we’ll work with you to activate your brand.</div>
         {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 place-content-center mt-16 md:mt-32 mx-auto w-3/4">
@@ -45,7 +45,7 @@ const page = () => {
                 })
             }
         </div> */}
-        <div className='max-w-5xl mx-auto mt-24 md:mt-48 grid grid-cols-1 md:grid-cols-2 gap-12 gap-x-40'>
+        <div className='max-w-5xl mx-auto mt-28 md:mt-48 grid grid-cols-1 md:grid-cols-2 gap-12 gap-x-40'>
           {capabilities.map((capability, idx) => {
             return (
               <div key={idx} className="md:pb-12 flex flex-col items-center">

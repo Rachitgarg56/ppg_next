@@ -121,9 +121,9 @@ const InfiniteCarousel = ({ data }: PageProps) => {
                        }`}
             style={{ width: `${cardWidth}vw` }}
           >
-            <figure className="w-[70%] lg:w-[40%] aspect-square self-center text-black flex items-center justify-center text-lg font-cambria font-bold italic rounded-full">
+            <figure className="relative w-[70%] lg:w-[40%] aspect-square self-center rounded-full">
               <img src={data.image} alt={data.title} />
-              {/* {data.title} */}
+              <span className="absolute text-white font-bold left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 font-cambria text-lg lg:text-2xl whitespace-nowrap">{data.title}</span>
             </figure>
             <p className="lg:w-[60%] lg:text-left font-thin text-xl opacity-80 max-sm:line-clamp-4">
               {data.text}

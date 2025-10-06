@@ -18,9 +18,9 @@ export const heroImages = [
 ]
 
 export const socials = [
-    {name: "LinkedIn", icon: "linkedin.png", url: "https://linkedin.com/", },
-    {name: "Instagram", icon: "instagram.png", url: "https://www.instagram.com/prestige_promotion_group_llc", },
-    {name: "Facebook", icon: "facebook.png", url: "https://www.facebook.com/p/Prestige-Promotion-Group-LLC-100063792138258/", },
+    {name: "LinkedIn", icon: "linkedin.png", url: "https://linkedin.com/", comingSoon: true, },
+    {name: "Instagram", icon: "instagram.png", url: "https://www.instagram.com/prestige_promotion_group_llc", comingSoon: false, },
+    {name: "Facebook", icon: "facebook.png", url: "https://www.facebook.com/p/Prestige-Promotion-Group-LLC-100063792138258/", comingSoon: false, },
 ];
 
 export const formPagesData = [

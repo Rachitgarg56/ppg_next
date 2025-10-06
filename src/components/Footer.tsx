@@ -14,12 +14,6 @@ const Footer = () => {
             {
                 socials.map((social) => {
                     return (
-                        social.comingSoon 
-                        ? 
-                        <div key={uuidv4()} title={`${social.name} coming soon`} className="w-8 opacity-50 md:w-12 h-8 md:h-12 drop-shadow-lg">
-                            <img src={`/assets/images/${social.icon}`} alt=""/>
-                        </div> 
-                        :
                         <Link key={uuidv4()} href={social.url} target="_blank" className="w-8 md:w-12 h-8 md:h-12 drop-shadow-lg">
                             <img src={`/assets/images/${social.icon}`} alt=""/>
                         </Link>

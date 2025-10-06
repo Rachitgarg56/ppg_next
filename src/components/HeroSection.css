@@ -1,0 +1,35 @@
+/* Keyframes for upward floating */
+@keyframes bubbleRise {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0; /* fade in when appearing */
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-50vh) translateX(var(--drift));
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(calc(var(--drift) * -1));
+    opacity: 0; /* fade out when exiting */
+  }
+}
+
+/* Generic bubble animation */
+.animate-bubble {
+  animation-name: bubbleRise;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+/* Small utility for left/right drift */
+.bubble-drift-left {
+  --drift: -20px; /* adjust for subtle drift */
+}
+
+.bubble-drift-right {
+  --drift: 20px;
+}

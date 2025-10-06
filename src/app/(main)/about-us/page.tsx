@@ -4,9 +4,9 @@ import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
 const teamMembers = [
-    {name: "Kourtney Houston", designation: "Owner", blurb: "After a career as a cosmetologist, Kourtney was ready to go on the greatest adventure of her life when she founded PPG in 2011. A master of staffing and problem solving, she loves the exciting space of events and interactive marketing. Outside of work, Kourtney enjoys cooking for friends and family.", image: "", },
-    {name: "Shale Houston", designation: "Owner", blurb: "Shale joined PPG during the pandemic, bringing 20+ years of sales and business experience and a willingness to take charge. He enjoys working in this industry precisely because there’s a different challenge every day. When not working, Shale enjoys hosting friends and family and boating.", image: "", },
-    {name: "Carrie Schoening", designation: "Manager", blurb: "Almost nothing happens here without Carrie’s effort and involvement. Carrie is the backend and calendar manager at PPG and has been a central member since 2014. Outside of work, Carrie is busy with her children and rescue animals, including the Irish wolfhounds she raises.", image: "", },
+    {name: "Kourtney Houston", designation: "Owner", blurb: "After a career as a cosmetologist, Kourtney was ready to go on the greatest adventure of her life when she founded PPG in 2011. A master of staffing and problem solving, she loves the exciting space of events and interactive marketing. Outside of work, Kourtney enjoys cooking for friends and family.", image: "/assets/images/about/kourtney-profile.jpg", },
+    {name: "Shale Houston", designation: "Owner", blurb: "Shale joined PPG during the pandemic, bringing 20+ years of sales and business experience and a willingness to take charge. He enjoys working in this industry precisely because there’s a different challenge every day. When not working, Shale enjoys hosting friends and family and boating.", image: "/assets/images/about/shale-profile.jpeg", },
+    // {name: "Carrie Schoening", designation: "Manager", blurb: "Almost nothing happens here without Carrie’s effort and involvement. Carrie is the backend and calendar manager at PPG and has been a central member since 2014. Outside of work, Carrie is busy with her children and rescue animals, including the Irish wolfhounds she raises.", image: "", },
   ]
 
 export const generateMetadata = (): Metadata => {
@@ -37,7 +37,9 @@ const page = () => {
                     teamMembers.map((member) => {
                         return (
                             <div key={uuidv4()} className="grid grid-cols-1 md:grid-cols-2 md:gap-4 justify-items-center items-center">
-                                <div className="w-64 md:w-80 h-64 md:h-80 bg-gray-100 rounded-full"></div>
+                                <figure className="w-64 md:w-80 h-64 md:h-80 bg-gray-100 rounded-full overflow-hidden">
+                                  <img className='w-full' src={member.image} alt={member.name} />
+                                </figure>
                                 <div className="leading-relaxed mt-8 md:mt-0">
                                     <h2 className="text-center md:text-left text-2xl md:text-3xl font-semibold italic font-cambria">{member.name}</h2>
                                     <h3 className="text-center md:text-left text-xl md:text-2xl font-thin italic mt-1">{member.designation}</h3>

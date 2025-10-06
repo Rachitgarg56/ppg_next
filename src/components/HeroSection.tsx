@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid'
 import { heroImages } from '@/utils/util'
 import CircleAnimation from './CircleAnimation'
 import { useRouter } from 'next/navigation'
+import './HeroSection.css'
 
 const HeroSection = () => {
     const [bubblesSize, setBubblesSize] = useState(() => 0)
@@ -71,18 +72,34 @@ const HeroSection = () => {
                     heroImage.url ?
 
                     // <Link href={heroImage.url}>
-                        <div
-                            onClick={()=>spreadCircle(heroImage.url, heroImage.color)}
-                            key={uuidv4()}
-                            className={`shadow-[inset_0_0_0_0.5px_rgba(255,255,255,0.6)] rounded-full bg-cover absolute cursor-pointer`}
-                            style={{
-                                height: `${heroImage.size*bubblesSize}px`,
-                                width: `${heroImage.size*bubblesSize}px`,
-                                top: `${heroImage.top}%`,
-                                left: `${heroImage.left}%`,
-                                backgroundImage: `url(${heroImage.path})`,
-                            }}
-                        ></div>
+                        // <div
+                        //     onClick={()=>spreadCircle(heroImage.url, heroImage.color)}
+                        //     key={uuidv4()}
+                        //     className={`shadow-[inset_0_0_0_0.5px_rgba(255,255,255,0.6)] rounded-full bg-cover absolute cursor-pointer`}
+                        //     style={{
+                        //         height: `${heroImage.size*bubblesSize}px`,
+                        //         width: `${heroImage.size*bubblesSize}px`,
+                        //         top: `${heroImage.top}%`,
+                        //         left: `${heroImage.left}%`,
+                        //         backgroundImage: `url(${heroImage.path})`,
+                        //     }}
+                        // ></div>
+                    <div
+                        onClick={()=>spreadCircle(heroImage.url, heroImage.color)}
+                        key={uuidv4()}
+                        className={`shadow-[inset_0_0_0_0.5px_rgba(255,255,255,0.6)] 
+                                    rounded-full bg-cover absolute animate-bubble 
+                                    ${Math.random() > 0.5 ? "bubble-drift-left" : "bubble-drift-right"}`}
+                        style={{
+                            height: `${heroImage.size * bubblesSize}px`,
+                            width: `${heroImage.size * bubblesSize}px`,
+                            top: `${heroImage.top}%`,
+                            left: `${heroImage.left}%`,
+                            backgroundImage: `url(${heroImage.path})`,
+                            animationDuration: `${6 + Math.random() * 6}s`, // 6–12s
+                            animationDelay: `${Math.random() * 5}s`,        // staggered start
+                        }}
+                    ></div>
                     // </Link> 
                     :
 

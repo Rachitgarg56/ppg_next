@@ -36,7 +36,7 @@ export default function Home() {
       <Testimonials/>
 
       {/* Clients */}
-      <Clients/>
+      {/* <Clients/> */}
 
       {/*  Buttons */}
       <div className="bg-black flex flex-row md:flex-row items-center justify-center space-x-4 pb-16">
